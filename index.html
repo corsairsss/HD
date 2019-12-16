@@ -10,6 +10,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-grid.css"
     />
     <title>Document</title>
+    
   </head>
   <body>
     <header>
@@ -49,11 +50,49 @@
   </div>
 
 </div>
-
-
-
-
       </div>
     </header>
+
+    <main>
+      <section class="container-fluid">
+        <div class="row row-cards no-gutters">
+
+          <div class="col-12 col-lg-4">
+            
+            <div class="card" id="cards">
+             <figure class="card__figure">
+               <a href="#"><img class="card__img" id="sky" src="images/elementds/1111.png" width="481" height="423"  alt="interiar-paint"></a>
+             </figure>
+            
+<div class="card__description">
+  Інтер'єрні фарби
+</div>
+                           
+
+
+                          </div>
+         </div>
+
+         
+
+
+
+
+
+
+
+
+
+      </section>
+    </main>
+    <script>
+      
+         var img = document.getElementById("sky");
+         var currWidth = img.width;
+         var currHeight = img.height;
+         console.log(currWidth,currHeight);
+         document.getElementById('cards').style.height=currHeight+'px';
+
+     </script>
   </body>
 </html>
