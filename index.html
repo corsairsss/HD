@@ -14,7 +14,6 @@
   </head>
   <body>
     <header>
-      <div class="header_bg"></div>
       <div class="container">
         <div class="row justify-content-between align-items-start">
           <div class="col-4 ">
@@ -54,24 +53,60 @@
     </header>
 
     <main>
-      <section class="container-fluid">
+      <section class="container">
         <div class="row row-cards no-gutters">
 
           <div class="col-12 col-lg-4">
             
-            <div class="card" id="cards">
+            <div class="card" id="card1">
              <figure class="card__figure">
-               <a href="#"><img class="card__img" id="sky" src="images/elementds/1111.png" width="481" height="423"  alt="interiar-paint"></a>
+               <a href="#"><img class="card__img" id="img" src="images/elementds/1111.png" width="380px"   alt="interiar-paint"></a>
              </figure>
             
-<div class="card__description">
-  Інтер'єрні фарби
-</div>
-                           
-
-
-                          </div>
+              <div class="card__description">
+                Інтер'єрні фарби
+              </div>
+             </div>
          </div>
+
+         <div class="col-12 col-lg-4">
+            
+          <div class="card" id="card2" >
+           <figure class="card__figure">
+             <a href="#"><img class="card__img" src="images/elementds/1111.png" width="380px"   alt="interiar-paint"></a>
+           </figure>
+          
+            <div class="card__description">
+              Інтер'єрні фарби
+            </div>
+           </div>
+       </div>
+
+       <div class="col-12 col-lg-4">
+            
+        <div class="card" id="card3" >
+         <figure class="card__figure">
+           <a href="#"><img class="card__img" src="images/elementds/1111.png" width="380px"  alt="interiar-paint"></a>
+         </figure>
+        
+          <div class="card__description">
+            Інтер'єрні фарби
+          </div>
+         </div>
+     </div>
+
+     <div class="col-12 col-lg-4">
+            
+      <div class="card" id="card4" >
+       <figure class="card__figure">
+         <a href="#"><img class="card__img" src="images/elementds/1111.png" width="380px"  alt="interiar-paint"></a>
+       </figure>
+      
+        <div class="card__description">
+          Інтер'єрні фарби
+        </div>
+       </div>
+   </div>
 
          
 
@@ -87,12 +122,21 @@
     </main>
     <script>
       
-         var img = document.getElementById("sky");
+         var img = document.getElementById("img");
+         console.log(img);
          var currWidth = img.width;
          var currHeight = img.height;
          console.log(currWidth,currHeight);
-         document.getElementById('cards').style.height=currHeight+'px';
+         document.getElementById('card1').style.height=currHeight+'px';
+        if (currHeight<(currWidth-10)) document.getElementById('card1').style.height=currWidth+'px';
 
+        document.getElementById('card2').style.height=currHeight+'px';
+        if (currHeight<(currWidth-10)) document.getElementById('card2').style.height=currWidth+'px';
+
+        document.getElementById('card3').style.height=currHeight+'px';
+        if (currHeight<(currWidth-10)) document.getElementById('card3').style.height=currWidth+'px';
+        document.getElementById('card4').style.height=currHeight+'px';
+        if (currHeight<(currWidth-10)) document.getElementById('card4').style.height=currWidth+'px';
      </script>
   </body>
 </html>
