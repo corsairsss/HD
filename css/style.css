@@ -15,11 +15,12 @@ html {
   box-sizing: border-box;
 }
 
-.logo-lang-row{
+.logo-lang-row {
   margin: 0 auto;
+  display: flex;
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .lang {
@@ -48,48 +49,42 @@ html {
   margin: 0 auto;
 }
 
-.drop input {
+input {
   display: none;
 }
 
-
-
-.menu-wrapper{
+.menu-wrapper {
   display: none;
-  grid-column: 1/4;
+  width: 100%;
 }
 
 .menu__item {
   text-decoration: none;
   font-size: 1rem;
   font-family: "PFDinTextPro";
-color: #000000;
+  color: #000000;
 }
 
 .menu {
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: #e60505;
-  border: 1px solid#c4bdbd;;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid#c4bdbd;
   width: inherit;
   text-align: center;
 
   text-transform: uppercase;
-  /* transform: rotatex(90deg);
-  transform-origin: 50% 0;
-  transition: all 0.4s ease-in-out; */
 }
-.menu__list{
-    border-bottom: 1px solid #c4bdbd;
-    padding: 4px;
-
+.menu__list {
+  border-bottom: 1px solid #c4bdbd;
+  padding: 4px;
 }
-.menu__list:hover{
+.menu__list:hover {
   background-color: #dddbdb;
 }
 
-.drop {
+.label-description {
   background-image: url(../images/menu2.png);
   background-repeat: no-repeat;
   background-position: right;
@@ -97,19 +92,11 @@ color: #000000;
   width: 50px;
   height: 40px;
   background-color: #ffffff;
-  margin-left: auto;
-
 }
-.label-description{
-  font-family: "PFDinTextPro";
-  line-height: 39px;
-  text-transform: uppercase;
-  padding-right: 10px;
+.menu-wrapper {
 }
 
-
-
- #check:checked .logo-lang-row .menu-wrapper{
+#check:checked ~ .menu-wrapper {
   display: block;
   width: inherit;
 
@@ -119,143 +106,89 @@ color: #000000;
   transition: all 0.4s ease-in-out;
 }
 
-.all{
-    text-align: center;
-    width: inherit;
+.all {
+  text-align: center;
+  width: inherit;
 }
 /* =======================CARDS=================== */
 
-.wrapper{
+.wrapper {
   position: relative;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 0 auto;
 }
-.card{
-position: relative;
+.card {
+  position: relative;
 
-background-color: #e60505;
+  background-color: #e60505;
 }
 
-.card__figure{
+.card__figure {
   margin: 0;
   display: block;
   width: 100%;
   background-color: #000000;
-
 }
-.card__img{
-  display: block; 
+.card__img {
+  display: block;
   width: 100%;
   height: auto;
   opacity: 0.5;
   z-index: 2;
-
 }
-.card__description{
+.card__description {
   position: absolute;
   color: #ffffff;
   text-transform: uppercase;
   font-family: "PFDinTextPro-bold";
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
-    font-size: 14px;
-    font-family: "PFDinTextPro";
-    font-weight: bold;
-    line-height: 1.2;
-    text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  font-family: "PFDinTextPro";
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
   white-space: nowrap;
   letter-spacing: 2px;
 }
 
-.card__figure:hover .card__img{
+.card__figure:hover .card__img {
   opacity: 1;
   cursor: pointer;
 }
-.card:hover .card__description{
-  color:#000000;
+.card:hover .card__description {
+  color: #000000;
   font-size: 14px;
   letter-spacing: 0px;
-
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (min-width: 768px) {
-
-  .logo-lang-row
-  {
+  .logo-lang-row {
     width: 748px;
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
   }
-  .wrapper{
+  .wrapper {
     width: 748px;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     /* grid-gap: 10px; */
     margin: 0 auto;
   }
-.card__description{
+  .card__description {
+    font-size: 26px;
+  }
 
-  font-size: 26px;
-
+  .card:hover .card__description {
+    font-size: 30px;
+  }
+  .drop {
+    /* display: none; */
+  }
 }
-
-.card:hover .card__description{
-  font-size: 30px;
-
-}
-.drop{
-  /* display: none; */
-}
-
-}
-
-
-
-
-
-
-
 
 @media (min-width: 1440px) {
   header {
@@ -268,18 +201,18 @@ background-color: #e60505;
     background-position: center;
   }
 
-  .logo-lang-row{
+  .logo-lang-row {
     width: 1440px;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  
-  .card{
+
+  .card {
     width: 481px;
     height: 428px;
   }
 
-  .wrapper{
+  .wrapper {
     width: 1440px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -287,17 +220,14 @@ background-color: #e60505;
     /* grid-gap: 10px; */
     margin: 0 auto;
   }
-  .card__description{
-
+  .card__description {
     font-size: 26px;
-  
   }
 
-  .card:hover .card__description{
+  .card:hover .card__description {
     font-size: 30px;
-  
   }
-  .drop{
+  .drop {
     /* display: none; */
   }
 }
