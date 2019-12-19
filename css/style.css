@@ -28,6 +28,7 @@ html {
   padding: 0;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 .lang__list {
   list-style: none;
@@ -40,7 +41,7 @@ html {
   font-family: "PFDinTextPro";
   color: #000000;
   text-transform: uppercase;
-  line-height: 1.538;
+  line-height: 39px;
   text-decoration: none;
 }
 
@@ -149,7 +150,7 @@ input {
   font-size: 14px;
   font-family: "PFDinTextPro";
   font-weight: bold;
-  line-height: 1.2;
+  line-height: 1.5;
   text-align: center;
   white-space: nowrap;
   letter-spacing: 2px;
