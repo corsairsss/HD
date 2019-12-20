@@ -139,6 +139,17 @@ input {
   opacity: 0.5;
   z-index: 2;
 }
+
+.card__icon{
+  display: none;
+  position: absolute;
+  top: 62%;
+  left: 66%; 
+ 
+}
+.card__icon img{
+  width: 100%;
+}
 .card__description {
   position: absolute;
   color: #ffffff;
@@ -153,10 +164,12 @@ input {
   line-height: 1.5;
   text-align: center;
   white-space: nowrap;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
-
-.card__figure:hover .card__img {
+.card:hover .card__icon{
+display: block;
+}
+.card:hover .card__img {
   opacity: 1;
   cursor: pointer;
 }
@@ -169,26 +182,54 @@ input {
 @media (min-width: 768px) {
   .logo-lang-row {
     width: 748px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
   }
+.label-description{
+  display: none;
+}
+    .lg{
+      order: 5;
+    }
+
+.menu-wrapper{
+  display: block;
+  width: initial;
+  flex-grow: 1;
+
+/* flex-basis: 60%; */
+}
+.menu{
+  display: flex;
+  justify-content: space-between;
+  border: none;
+
+}
+
+.menu__list {
+  border-bottom: none;
+  /* padding: 4px; */
+}
+.menu__item{
+  font-size: 12px;
+}
+
+
+  /* ======card====== */
   .wrapper {
     width: 748px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
-    /* grid-gap: 10px; */
     margin: 0 auto;
   }
   .card__description {
-    font-size: 26px;
+    font-size: 20px;
   }
 
   .card:hover .card__description {
-    font-size: 30px;
+    font-size: 22px;
   }
-  .drop {
-    /* display: none; */
-  }
+  
 }
 
 @media (min-width: 1440px) {
@@ -204,10 +245,47 @@ input {
 
   .logo-lang-row {
     width: 1440px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  
   }
 
+  .logo{
+    /* flex-basis: 25%; */
+  }
+.label-description{
+  display: none;
+}
+.menu-wrapper{
+  display: block;
+  flex-basis: 60%;
+  flex-grow: 1;
+
+}
+.lg{
+  order: 5;
+  /* flex-basis: 15%; */
+
+}
+.lang__item{
+  font-size: 28px;
+}
+.menu__list {
+  border-bottom: none;
+  padding: 4px;
+}
+.menu{
+  border: none;
+  width: 100%;
+  display: flex;
+}
+.menu__item{
+  font-size: 22px;
+  padding: 4px;
+}
+
+
+
+
+/* ===================card============ */
   .card {
     width: 481px;
     height: 428px;
