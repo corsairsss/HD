@@ -301,18 +301,9 @@ input {
   
   .additional-menu {
     display: block;
-    /* width: 1440px;
-    position: relative; */
     margin: 5px auto;
-   
-
   }
-  /* .additional-menu__container{
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    right: 0;
-  } */
+  
   .wrapper {
     width: 1440px;
     display: grid;
