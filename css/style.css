@@ -14,9 +14,10 @@
 html {
   box-sizing: border-box;
 }
-.overlay{
+.overlay {
   display: none;
 }
+
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -30,7 +31,7 @@ html {
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-justify-items: right;
+  justify-items: right;
 }
 .lang__list {
   list-style: none;
@@ -108,7 +109,9 @@ input {
 }
 
 /* =======================CARDS=================== */
-
+.additional-menu {
+  display: none;
+}
 .wrapper {
   position: relative;
   width: 100%;
@@ -181,10 +184,6 @@ input {
     grid-template-columns: 256px auto 110px;
   }
 
-  
-
-
-
   .label-description {
     display: none;
   }
@@ -211,18 +210,16 @@ input {
   }
   .menu__item {
     font-size: 12px;
-     }
+  }
 
-     .menu__item:hover{
-       color: #71b32b;
-     }
-     .menu__list:hover {
-      background-color: #ffffff;
-      cursor: pointer;
-    }
+  .menu__item:hover {
+    color: #71b32b;
+  }
+  .menu__list:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+  }
 
-
-    
   /* ======card====== */
   .wrapper {
     width: 748px;
@@ -249,7 +246,7 @@ input {
     background-size: cover;
     background-position: center;
   }
-  .overlay{
+  .overlay {
     display: block;
     width: 1440px;
     height: 1060px;
@@ -257,44 +254,41 @@ input {
     position: relative;
     z-index: 2;
   }
-    .overlay__slogan {
-      position: absolute;
-      border-radius: 18px;
-      background-color: rgb(255, 255, 255);
-      opacity: 0.851;
-      right: 0;
-      top: 460px;
-      width: 482px;
-      height: 145px;
-      z-index: 4;
-      text-align: center;
-    }
+  .overlay__slogan {
+    position: absolute;
+    border-radius: 18px;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.851;
+    right: 0;
+    top: 460px;
+    width: 482px;
+    height: 145px;
+    z-index: 4;
+    text-align: center;
+  }
 
-.overlay__slogan__text{
-  display: block;
-  font-size: 40px;
-  font-family: "PF DinText Pro";
-  color: rgb(0, 0, 0);
-  line-height: 1.12;
-  margin-top: 27px;
-}
-
-
+  .overlay__slogan__text {
+    display: block;
+    font-size: 40px;
+    font-family: "PF DinText Pro";
+    color: rgb(0, 0, 0);
+    line-height: 1.12;
+    margin-top: 27px;
+  }
+ 
   .container {
-    width: 1420px;
+    width: 1440px;
     grid-template-columns: 300px auto 135px;
   }
   .label-description {
     display: none;
   }
-  .menu{
+  .menu {
     align-items: end;
-
   }
-.lang{
-  align-items: end;
-
-}
+  .lang {
+    align-items: end;
+  }
   .menu__item {
     font-size: 18px;
   }
@@ -304,7 +298,21 @@ input {
     width: 481px;
     height: 428px;
   }
+  
+  .additional-menu {
+    display: block;
+    /* width: 1440px;
+    position: relative; */
+    margin: 5px auto;
+   
 
+  }
+  /* .additional-menu__container{
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+  } */
   .wrapper {
     width: 1440px;
     display: grid;
@@ -318,5 +326,4 @@ input {
   .card:hover .card__description {
     font-size: 30px;
   }
-  
 }
