@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/normalize.css" />
+
     <link rel="stylesheet" href="css/style.css" />
         <title>Himdecor</title>
     
@@ -12,13 +14,10 @@
     <header>
          
       <div class="container">
-        
-        <label for="check" class="label-description"></label>
-        <input type="checkbox" id="check" />
-        
-        
-
-        
+       
+          <div class="burgerImg js-click">
+            <img src="./images/menu2.png" alt="">
+          </div>
         <picture class="logo">
           <source media="(max-width: 767px)" srcset="images/LOGO.png">
           <source media="(max-width: 1439px)" srcset="images/LOGO_min768px.png">
@@ -35,7 +34,7 @@
         </ul>
      
      
-          <ul class="menu">
+          <ul class="menu js-menu320Px">
             <li class="menu__list"><a class="menu__item" href="#">про компанію</a></li class="menu__list">
             <li class="menu__list"><a class="menu__item" href="https://himdecor.ua/uk/shop/">продукція</a></li>
             <li class="menu__list"><a class="menu__item" href="#">корисно знати</a></li>
@@ -56,7 +55,7 @@
     </header>
 
     <main>
-      <section class="additional-menu">
+      <!-- <section class="additional-menu">
         <div class="container">
           
           <picture class="logo">
@@ -79,18 +78,23 @@
             </ul>
   
           </div>
-      </section>
+      </section> -->
 
       <section class="wrapper">
         
             
             <div class="card">
              <figure class="card__figure">
-               <a href="#"><img class="card__img" id="img" src="images/elementds/interior-paints.png" width="481px"   alt="interiar-paint"></a>
+               <a href="#">
+                 <img class="card__img" id="img" src="images/elementds/interior-paints.png" width="481px"   alt="interiar-paint">
+                </a>
              </figure>
             
-             <div class="card__icon">
-               <img src="images/elementds/icon_card1.jpeg" alt="some_icon">
+             <div class="card__more-info">
+              <p>МИЮЧІ</p>
+              <P>ДЛЯ ВАНН</P>
+              <p>ДЛЯ СТЕЛІ</p>
+              <p>НАПІВГЛЯНЦЕВІ</p>
              </div>
 
               <div class="card__description">
@@ -102,9 +106,12 @@
               <figure class="card__figure">
                 <a href="#"><img class="card__img" id="img" src="images/elementds/fasade-paint.png" width="481px"   alt="interiar-paint"></a>
               </figure>
-              <div class="card__icon">
-                <img src="images/elementds/icon_card1.jpeg" alt="some_icon">
-              </div>
+              <div class="card__more-info">
+                <p>САДОВА</p>
+                <P>ФАСАДНА</P>
+                <p>НАПІВГЛЯНЦЕВІ</p>
+                <p>АНТИБАКТЕРІАЛЬНА</p>
+               </div>
                <div class="card__description">
                  Фасадні фарби
                </div>
@@ -114,7 +121,14 @@
                 <figure class="card__figure">
                   <a href="#"><img class="card__img" id="img" src="images/elementds/grunt.png" width="481px"   alt="interiar-paint"></a>
                 </figure>
-               
+                <div class="card__more-info">
+                  <p>ДЛЯ СТІН</p>
+                  <P>ДЛЯ ДЕРЕВА</P>
+                  <p>ГІДРОФОБІЗАТОР</p>
+                  <p>БІО-ГРУНТ</p>
+                  <p>КВАРЦ-ГРУНТ</p>
+
+                 </div>
                  <div class="card__description">
                   грунтівка
                  </div>
@@ -125,7 +139,12 @@
                   <figure class="card__figure">
                     <a href="#"><img class="card__img" id="img" src="images/elementds/decor-paint.png" width="481px"   alt="interiar-paint"></a>
                   </figure>
-                 
+                  <div class="card__more-info">
+                    <p>ПО ДЕРЕВУ</p>
+                    <P>ПО МЕТАЛУ</P>
+                    <p>РАДІАТОРНА</p>
+                    <p>ДЕКОРАТИВНА</p>
+                   </div>
                    <div class="card__description">
                     декоративні фарби  <br>та фарби по дереву
                    </div>
@@ -136,7 +155,14 @@
                     <figure class="card__figure">
                       <a href="#"><img class="card__img" id="img" src="images/elementds/Laku.png" width="481px"   alt="interiar-paint"></a>
                     </figure>
-                   
+                    <div class="card__more-info">
+                      <p>ПАРКЕТНИЙ</p>
+                      <P>ФАСАДНИЙ</P>
+                      <p>ДЛЯ КАМНЯ</p>
+                      <p>ГРУНТУЮЧИЙ</p>
+                      <p>ПАНЕЛЬНИЙ</p>
+
+                     </div>
                      <div class="card__description">
                        лаки акрилові
                      </div>
@@ -148,7 +174,18 @@
                       <figure class="card__figure">
                         <a href="#"><img class="card__img" id="img" src="images/elementds/lasur.png" width="481px"   alt="interiar-paint"></a>
                       </figure>
-                     
+                      <div class="card__more-info">
+                        <p>ТІК</p>
+                        <P>ДУБ</P>
+                        <P>КЕДР</P>
+                        <p>ГОРІХ</p>
+                        <p>СОСНА</p>
+                        <p>ОЛИВА</p>
+                        <p>КАШТАН</p>
+                        <p>ПАЛІСАНДР</p>
+
+
+                       </div>
                        <div class="card__description">
                          лазур для дерева <br> декоративна
                        </div>
@@ -160,9 +197,14 @@
                         <figure class="card__figure">
                           <a href="#"><img class="card__img" id="img" src="images/elementds/PVA.png" width="481px"   alt="interiar-paint"></a>
                         </figure>
-                       
+                        <div class="card__more-info">
+                          <P>D3</P>
+                          <p>ПВА</p>
+                          <p>РІДКІ ЦВЯХИ</p>
+                          <p>ЛІНОЛЕУМА</p>
+                         </div>
                          <div class="card__description">
-                           клей пва,паркет,<br>лінолеум
+                           клей пва,<br>лінолеум
                          </div>
                         </div>
 
@@ -172,7 +214,12 @@
                           <figure class="card__figure">
                             <a href="#"><img class="card__img" id="img" src="images/elementds/shpaklivka.png" width="481px"   alt="interiar-paint"></a>
                           </figure>
-                         
+                          <div class="card__more-info">
+                            <p>СОСНА</p>
+                            <P>ДУБ</P>
+                            <p>БІЛА</p>
+                            <p>та ін.</p>
+                           </div>
                            <div class="card__description">
                              шпаклівка по <br> дереву
                            </div>
@@ -182,7 +229,16 @@
                             <figure class="card__figure">
                               <a href="#"><img class="card__img" id="img" src="images/elementds/dekor-shtukaturka.png" width="481px"   alt="interiar-paint"></a>
                             </figure>
-                           
+                            <div class="card__more-info">
+                              <p>ФІНІШНА</p>
+                              <p>СТАРТОВА</p>
+                              <p>ВЕЛЮР</p>
+                              <p>МАРМОРИН</p>
+                              <P>ТРАВЕРТІНО</P>
+                              <P>ВЕНЕЦІАНКА</P>
+                              <P>ВОСКИ</P>
+
+                             </div>
                              <div class="card__description">
                                декоративні <br> штукатурки <br> та шпаклівки
                              </div>
@@ -207,7 +263,7 @@
 </p>
 
 <p class="container-text_second_row">
-  <span>HIMDECOR</span> - компанія, яка взяла високу планку якості та доступності продукції, і постійно прагне до розширення асортименту і визнання серед українських споживачів.
+  <span>HIMDECOR</span>  компанія, яка взяла високу планку якості та доступності продукції, і постійно прагне до розширення асорти- менту і визнання серед українських споживачів.
 </p>
 
 <p class="container-text_second_row">
@@ -220,7 +276,7 @@
 <section class="contact">
 
 <div class="phones">
-  <p class="phones__mobile">+380(67)4310968</p>
+  <a href="tel:+380674310968"class="phones__mobile">+380(67)4310968</a>
   <p class="phones__works">0432-55-66-18 </p>
 </div>
 
@@ -243,32 +299,46 @@
 
 
     </main>
+
+<footer class="footer">
+
+  <section class="footer__wraper">
+
+    <ul class="footer__list list">
+      <li class="list__item">про компанію</li>
+      <li class="list__item">продукція</li>
+      <li class="list__item">корисно занти</li>
+      <li class="list__item">партнерам</li>
+      <li class="list__item">де купити</li>
+      <li class="list__item">контакти</li>
+    </ul>
+
+    <div class="social">
+     <a href="#" class="facebook">
+       <img src="./images/facebook-icon.png" alt="">
+     </a>
+    <a href="#" class="youtube">
+      <img src="./images/Youtube.png" alt="">
+    </a>
+  </div>
+
+    <span class="footer__info">Всі права захищені 2020</span>
+
+
+
+  </section>
+
+</footer>
+
     <script>
 
-
-// function menuu()
-
-// {
-//   main_menu.style.display = 'block'; 
-
-// }     
-
-                    //  let main_menu = document.getElementById("main_menu");
-                    //  console.log(main_menu);
-                    //   main_menu.style.display = 'block'; 
-        //  var disp = element.style.display;
-    //      var currHeight = img.height;
-        //  console.log(disp);
-    //      document.getElementById('card1').style.height=currHeight+'px';
-    //     if (currHeight<(currWidth-10)) document.getElementById('card1').style.height=currWidth+'px';
-
-    //     document.getElementById('card2').style.height=currHeight+'px';
-    //     if (currHeight<(currWidth-10)) document.getElementById('card2').style.height=currWidth+'px';
-
-    //     document.getElementById('card3').style.height=currHeight+'px';
-    //     if (currHeight<(currWidth-10)) document.getElementById('card3').style.height=currWidth+'px';
-    //     document.getElementById('card4').style.height=currHeight+'px';
-    //     if (currHeight<(currWidth-10)) document.getElementById('card4').style.height=currWidth+'px';
-    //  </script>
+      'use strict';
+      const refFallowMenu=document.querySelector('.js-click');
+      const menu320Px = document.querySelector('.js-menu320Px');
+      refFallowMenu.addEventListener('click',addMenu);
+      function addMenu(){
+        menu320Px.classList.toggle('show-menu')
+      }
+   </script>
   </body>
 </html>
