@@ -1,0 +1,313 @@
+@font-face {
+    font-family: 'PFDinTextPro';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/PFDinTextPro-Regular.otf');
+  }
+  @font-face {
+    font-family: 'PFDinTextPro-bold';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/PFDinTextPro-Bold.otf');
+  }
+  @font-face {
+    font-family: 'PFDinTextPro-Medium';
+    font-style: normal;
+    src: url('../fonts/PFDinTextPro-Medium.otf');
+  }
+  @font-face {
+    font-family: 'PFDinTextPro-ExtraBlack';
+    font-style: normal;
+    src: url('../fonts/PFDinTextPro-ExtraBlack.otf');
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  p {
+    margin: 0;
+  }
+ 
+  .container {
+    margin: 0 auto;
+    width: 320px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 10px;
+  }
+  .logo {
+    justify-self: center;
+  }
+  /* ================lang================ */
+  .lang {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: right;
+  }
+  .lang__list {
+    list-style: none;
+  }
+  
+  .lang__item {
+    font-size: 14px;
+    display: block;
+    font-family: 'PFDinTextPro';
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 2;
+  }
+  .lang__item:hover {
+    display: block;
+    cursor: pointer;
+    width: 38px;
+    height: 26px;
+    background-color: #71b32b;
+    border-radius: 10px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 2;
+  }
+  
+  /* =========MENU============== */
+  .burgerImg {
+    justify-self: center;
+  }
+  
+  .menu__item {
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'PFDinTextPro';
+    color: #000000;
+  }
+  
+  .menu {
+    grid-column: 1/4;
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid#c4bdbd;
+    text-align: center;
+  
+    text-transform: uppercase;
+  }
+  .menu__list {
+    border-bottom: 1px solid #c4bdbd;
+    padding: 4px;
+  }
+  .menu__list:hover {
+    background-color: #dddbdb;
+  }
+  
+  .show-menu {
+    display: block;
+  }
+  
+  /* =======================CARDS=================== */
+  
+  .wrapper {
+    position: relative;
+    width: 320px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+  }
+  .card {
+    position: relative;
+    background-color: #e60505;
+  }
+  
+  .card__figure {
+    margin: 0;
+    display: block;
+    width: 100%;
+    background-color: #000000;
+  }
+  .card__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+    z-index: 2;
+  }
+  
+  .card__more-info {
+    text-align: center;
+    font-size: 14px;
+    display: none;
+    position: absolute;
+    font-family: 'PFDinTextPro-bold';
+    color: #000000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .card__description {
+    position: absolute;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'PFDinTextPro-bold';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    font-family: 'PFDinTextPro';
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+    white-space: nowrap;
+    letter-spacing: 1px;
+  }
+  .card:hover .card__more-info {
+    display: block;
+  }
+  .card:hover .card__img {
+    opacity: 1;
+    cursor: pointer;
+  }
+  .card:hover .card__description {
+    display: none;
+  }
+  
+  
+  
+  
+  .footer {
+    margin-top: 15px;
+    width: 100%;
+    background-color: #000;
+    color: #ffffff;
+  }
+  .footer__wraper {
+    font-size: 12px;
+    width: 320px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: min-content;
+    justify-items: center;
+  }
+  .list {
+    text-align: center;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 5px;
+    align-items: center;
+  }
+  .list__item:first-child {
+    display: none;
+  }
+  .facebook {
+    margin-right: 20px;
+  }
+  .footer__menu{
+    color: #ffffff;
+    text-decoration: none;
+  }
+      .footer__menu:hover{
+        color: #71b32b;
+      cursor: pointer;
+      }
+  
+  @media (min-width: 1280px) {
+    
+    .container {
+      width: 1280px;
+      grid-template-columns: 300px auto 135px;
+    }
+    .burgerImg {
+      display: none;
+    }
+  
+    .menu {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      border: none;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      align-items: center;
+    }
+    .lang {
+      align-items: center;
+      justify-items: center;
+    }
+    .menu__item {
+      font-size: 18px;
+    }
+    .menu__list {
+      border-bottom: none;
+    }
+    .menu__item:hover {
+      color: #71b32b;
+    }
+    .menu__list:hover {
+      background-color: #ffffff;
+      cursor: pointer;
+    }
+    /* ===================card============ */
+    .card {
+      width: 420px;
+    }
+  
+    .additional-menu {
+      display: block;
+      margin: 5px auto;
+    }
+  
+    .wrapper {
+      width: 1260px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin: 0 auto;
+    }
+    .card__description {
+      font-size: 26px;
+    }
+    .card__more-info {
+      font-size: 36px;
+    }
+   
+  .footer__wraper{
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 18px;
+    width: 1260px;
+    
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 45px;
+    align-items: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  
+  
+  } 
+  .footer__menu{
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .footer__list{
+      padding: 0;
+      justify-self: left;
+    font-size: 16px;
+    font-family: 'PFDinTextPro';
+    text-transform: uppercase;
+    grid-template-columns: repeat(6, max-content);
+    grid-column-gap: 35px;
+  }
+  .facebook {
+    margin-right: 40px;
+  }
+  .footer__menu:hover{
+    color: #71b32b;
+  cursor: pointer;
+  }
+  .list__item:first-child {
+    display: block;
+  }
+  }
