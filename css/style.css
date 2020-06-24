@@ -461,7 +461,7 @@ p {
 }
 
 .footer__list{
-  font-size: 26px;
+  font-size: 22px;
   font-family: 'PFDinTextPro-bold';
   text-transform: uppercase;
   grid-template-columns: repeat(6, max-content);
