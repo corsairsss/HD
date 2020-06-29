@@ -1,0 +1,345 @@
+@font-face {
+  font-family: 'PFDinTextPro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/PFDinTextPro-Regular.otf');
+}
+@font-face {
+  font-family: 'PFDinTextPro-bold';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/PFDinTextPro-Bold.otf');
+}
+@font-face {
+  font-family: 'PFDinTextPro-Medium';
+  font-style: normal;
+  src: url('../fonts/PFDinTextPro-Medium.otf');
+}
+@font-face {
+  font-family: 'PFDinTextPro-ExtraBlack';
+  font-style: normal;
+  src: url('../fonts/PFDinTextPro-ExtraBlack.otf');
+}
+
+html {
+  box-sizing: border-box;
+}
+p {
+  margin: 0;
+}
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
+.wrapper-shopPage {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.first-row {
+  margin: 0 auto;
+  width: 300px;
+}
+.title {
+  font-family: 'PFDinTextPro';
+}
+
+.were-to-buy__info {
+  font-family: 'PFDinTextPro-Medium';
+  margin-bottom: 30px;
+  /* text-align: center; */
+  position: relative;
+}
+
+.were-to-buy__info::before {
+  content: '';
+  position: absolute;
+  /* right: 5px; */
+  /* display: block; */
+  width: 2px;
+  left: -5px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 30px;
+  background-color: rgb(4, 175, 255);
+  margin: 0 auto;
+}
+.form__title {
+  font-size: 32px;
+  font-family: 'Myriad Pro';
+  color: rgb(0, 0, 0);
+}
+.form {
+  width: 300px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.title-contact {
+  color: #ffffff;
+  padding-top: 6.7rem;
+}
+.sub-title-contact {
+  padding-bottom: 4.8rem;
+}
+
+.contact {
+  width: 300px;
+  margin: 0 auto;
+}
+.contact-input {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+}
+
+.name,
+.emails {
+  height: 53px;
+  margin: 0;
+  border: 1px solid #cccccc;
+  font-size: 1.25rem;
+  color: #bbbbbb;
+  box-sizing: border-box;
+  padding: 1.25rem;
+  border-radius: 2px;
+  margin-bottom: 16px;
+}
+
+.text {
+  width: 300px;
+  min-height: 210px;
+  margin: 0;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  resize: none;
+  color: #bbbbbb;
+  box-sizing: border-box;
+  padding: 1.25rem;
+  margin-bottom: 16px;
+}
+
+.buttons {
+  font-size: 25px;
+  color: #ffffff;
+  line-height: 1.2;
+  border: none;
+  padding: 1.56rem 2.7rem;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 600;
+  border-radius: 13px;
+  background-color: rgb(113, 179, 43);
+  font-family: 'PF DinText Pro';
+}
+
+/* --------------------------------------------------------- */
+
+.buttons:hover {
+  cursor: pointer;
+  background-color: #efc535;
+}
+.buttons:active {
+  background-color: #fed136;
+  outline: none;
+}
+
+::placeholder {
+  /* Firefox, Chrome, Opera */
+  color: #bbbbbb;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #bbbbbb;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+.contact input[type='email']:focus:valid,
+.contact input[name='name']:focus:valid,
+.contact textarea[name='body']:focus:valid {
+  transition: border 0.4s;
+  border: 1px solid rgb(0, 255, 0);
+}
+.contact input[type='email']:focus:invalid,
+.contact input[name='name']:focus:invalid,
+.contact textarea[name='body']:focus:invalid {
+  border: 1px solid rgb(255, 0, 0);
+  transition: border 0.4s;
+}
+/* ////////////////////// */
+.were-to-buy-title {
+  font-size: 24px;
+  text-align: center;
+  font-family: 'PFDinTextPro';
+  color: rgb(0, 0, 0);
+  line-height: 1.625;
+}
+
+.second-row {
+  width: 320px;
+}
+.second-row__img {
+  display: none;
+}
+
+.second-row__list {
+  width: 300px;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  font-family: 'PF DinText Pro';
+  font-size: 16px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.list-item__title {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 8px;
+  border-radius: 10px;
+  text-align: center;
+}
+.list-item__contact {
+  font-weight: 600;
+  text-align: center;
+}
+.list-item__title--green {
+  background-color: #71b32b;
+}
+.list-item__title--blue {
+  background-color: #74b3e2;
+}
+.list-item__title--yellow {
+  background-color: #dcc63b;
+}
+
+.list-item__title--red {
+  background-color: #c72e2a;
+}
+
+.list-item__title--violet {
+  background-color: #995296;
+}
+
+@media (min-width: 1280px) {
+  .wrapper-shopPage {
+    width: 1280px;
+  }
+  .first-row {
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 1280px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+
+  .contact {
+    margin: 0;
+    width: 500px;
+    justify-self: right;
+  }
+  .title {
+    font-size: 32px;
+  }
+  .were-to-buy__info {
+    font-size: 24px;
+    text-align: left;
+    margin-left: 20px;
+  }
+  .were-to-buy__info::before {
+    left: -15px;
+    width: 4px;
+  }
+  .form {
+    justify-self: end;
+    margin: 0;
+    width: 500px;
+  }
+  .contact-input {
+    width: 500px;
+  }
+  .text,
+  .emails,
+  .name {
+    width: 500px;
+  }
+
+  .second-row__img {
+    display: block;
+  }
+  .second-row {
+    width: 1280px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+  .second-row img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .second-row__list {
+    width: 533px;
+    text-align: start;
+    margin: 0;
+    justify-self: start;
+  }
+  .list-item__title {
+    width: 300px;
+    font-size: 26px;
+  }
+  .list-item__subtitle {
+    font-size: 22px;
+  }
+  .list-item__contact {
+    text-align: start;
+    font-size: 24px;
+    line-height: 1;
+  }
+  .list-item__contact::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-color: chocolate;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+
+  .list-item__contact--green::before {
+    background-color: #71b32b;
+  }
+  .list-item__contact--blue::before {
+    background-color: #74b3e2;
+  }
+  .list-item__contact--yellow::before {
+    background-color: #dcc63b;
+  }
+
+  .list-item__contact--red::before {
+    background-color: #c72e2a;
+  }
+
+  .list-item__contact--violet::before {
+    background-color: #995296;
+  }
+  .were-to-buy-title {
+    text-align: start;
+    font-size: 32px;
+  }
+  .footer {
+    bottom: 0;
+  }
+}
