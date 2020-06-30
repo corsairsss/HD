@@ -172,7 +172,9 @@ body {
 .web_text {
   align-self: center;
 }
-
+.footer{
+  bottom: 0;
+}
 /*  */
 /* .footer {
     margin-top: 15px;
