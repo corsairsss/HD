@@ -1,0 +1,221 @@
+@font-face {
+    font-family: 'PFDinTextPro';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/PFDinTextPro-Regular.otf');
+  }
+  @font-face {
+    font-family: 'PFDinTextPro-bold';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/PFDinTextPro-Bold.otf');
+  }
+  @font-face {
+    font-family: 'PFDinTextPro-Medium';
+    font-style: normal;
+    src: url('../fonts/PFDinTextPro-Medium.otf');
+  }
+  @font-face {
+    font-family: 'PFDinTextPro-ExtraBlack';
+    font-style: normal;
+    src: url('../fonts/PFDinTextPro-ExtraBlack.otf');
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    min-height: 100vh;
+    position: relative;
+  }
+  /* img{
+      display: block;
+      width: 100%;
+      height: auto;
+  } */
+
+  .productPage{
+      width: 320px;
+      margin: 0 auto;
+  }
+.showAsideMenu{
+    display: none;
+}
+/* ----------------left----------------- */
+.aside{
+    width: 300px;
+    text-align: center;
+}
+.aside__list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* display: none; */
+}
+.btn-aside{
+    margin-bottom: 10px;
+}
+
+/* ---------------central block------------------ */
+  .list-img{
+    display: none;
+
+}
+.main-img{
+    width: 300px;
+    margin: 0 auto;
+
+}
+.main-img img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.half_logo{
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.product-video{
+    display: none;
+}
+
+/* -----------------productInfo----------------- */
+.productInfo{
+    margin: 0 auto;
+    width: 300px;
+}
+.productInfo p,
+.productInfo span{
+    font-family: "PFDinTextPro";
+
+}
+.productInfo__name{
+    font-size: 20px;
+    text-align: center;
+    font-family: "PFDinTextPro";
+    color: rgb(0, 0, 0);
+    line-height: 1.1;
+}
+.productInfo__weight,
+.productInfo__sklad,
+.productInfo__time,
+.productInfo__vutratu,
+.productInfo__thinner,
+.productInfo__wereuse,
+.productInfo__use-title,
+.productInfo__prepare-title
+{
+    margin-top: 10px;
+        font-size: 14px;
+        font-family: "PFDinTextPro";
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        text-transform: uppercase;
+      
+}
+
+.list-weight{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 45px);
+    grid-auto-flow: column;
+    column-gap: 5px;
+}
+
+.list-weight__item{
+    font-family: "PFDinTextPro";
+    text-align: center;
+    font-size: 14px;
+    background-color: rgb(249, 246, 243);
+    border-radius: 14px;
+    color: rgb(113, 179, 43);
+    line-height: 2;
+}
+
+.productInfo__sklad-text,
+.productInfo__time-text,
+.productInfo__vutratu-text,
+.productInfo__thinner-text,
+.productInfo__wereuse-text,
+.productInfo__prepare,
+.productInfo__use
+{
+        font-size: 12px;
+        color: rgb(0, 0, 0);
+        line-height: 1;
+}
+
+.productInfo__links{
+    margin: 15px 0;
+    text-align: center;
+}
+.toBuy,
+.sertufikat
+{
+    display: inline-block;
+    font-family: "PFDinTextPro";
+    text-transform: uppercase;
+    line-height: 1.429;
+    width: 40%;
+    border-radius: 8px;
+    background-color:  rgb(113, 179, 43);
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.toBuy:active,
+.sertufikat:active
+{
+    background-color: lightslategray;
+}
+
+.productInfo__features,
+.productInfo__use{
+        font-size: 12px;
+        line-height: 1.143;
+        text-align: justify;
+       
+}
+.productInfo__prepare p::before{
+    content: '';
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    background-color:  rgb(113, 179, 43);
+    margin-right: 5px;
+
+}
+  
+
+/* -------------------- */
+
+
+
+
+
+  @media (min-width: 1280px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
