@@ -46,21 +46,52 @@
 .showAsideMenu{
     display: none;
 }
+.product--green{
+    color: #71b32b;
+}
 /* ----------------left----------------- */
 .aside{
     width: 300px;
+    margin: 0 auto;
     text-align: center;
-}
-.aside__list{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    /* display: none; */
 }
 .btn-aside{
     margin-bottom: 10px;
+    background-color:rgb(113, 179, 43); 
+    font-family: "PFDinTextPro";
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+.aside__list{
+    font-family: "PFDinTextPro";
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid#c4bdbd;
+    text-align: center;
+
+}
+.aside_item{
+
+    border-bottom: 1px solid #c4bdbd;
+    padding: 4px;
+}
+.aside_item:hover {
+    background-color: #dddbdb;
+  }
+.itemLink{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+
 }
 
+
+  
 /* ---------------central block------------------ */
   .list-img{
     display: none;
@@ -204,18 +235,153 @@
 
   @media (min-width: 1280px) {
 
+    .productPage{
+        width: 1280px;
+        display: grid;
+        grid-template-columns: 25% 33% 42%;
+        margin-top: 80px;
+    }
+
+.btn-aside{
+    display: none;
+}
+.aside__list{
+    display: inline-block;
+    border: none;
+    text-align: left;
+
+}
+
+.aside_item{
+    border: none;
+    padding-bottom:35px;
+}
+.itemLink{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.154;
+}
+.aside_item:hover {
+    background-color:#fff;
+}
+.itemLink:hover{
+    color: rgb(113, 179, 43);
+
+  }
+
+/* --------------central */
+
+.list-img{
+    list-style: none;
+    display: grid;
+grid-template-columns: repeat(auto-fill,100px);
+column-gap: 10px;
+margin-top: 30px;
+margin-bottom: 70px;
+}
+.list-img img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.product-video{
+    margin: 0 auto;
+    display: block;
+}
+/* --------------- */
+.productInfo{
+    margin: 0 auto;
+    width: 100%;
+}
+.productInfo__name{
+    font-size: 30px;
+}
+
+.productInfo__weight,
+.productInfo__sklad,
+.productInfo__time,
+.productInfo__vutratu,
+.productInfo__thinner,
+.productInfo__wereuse,
+.productInfo__use-title,
+.productInfo__prepare-title
+{
+        font-size: 16px;
+       
+}
+
+.productInfo__sklad-text,
+.productInfo__time-text,
+.productInfo__vutratu-text,
+.productInfo__thinner-text,
+.productInfo__wereuse-text,
+.productInfo__prepare,
+.productInfo__use,
+.productInfo__features
+{
+        font-size: 14px;
+       
+}
+
+.toBuy,
+.sertufikat
+{
+    width: 30%;
+
+}
+.sertufikat{
+    margin-left: 30px;
+}
 
 
+.product_swiper{
+    width: 1280px;
+    margin: 0 auto;
+}
+.swiper{
+    width: 75%;
+    min-height: 400px;
+    background-color: #f9f6f3;
+    margin-left: auto;
+}
+.swiper__title{
 
+    font-size: 18px;
+        font-family: "PFDinTextPro";
+        color: rgb(0, 0, 0);
+        line-height: 1.333;
+        text-align: center;
+        padding-top: 30px;
+}
+.swiper__list{
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 50px;
+    margin-top: 40px;
+}
+.swiper-list__item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
+.product-title{
+        font-size: 16px;
+        font-family: "PFDinTextPro";
+        color: rgb(0, 0, 0);
+        line-height: 1.125;
+        text-align: center;
+        margin-top: 20px;
+        
+}
 
-
-
-
-
-
-
-
-
+.footer{
+    position: static;
+    margin-top: 50px;
+}
 
   }

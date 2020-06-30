@@ -132,7 +132,9 @@
 
 
 
-
+.product--green{
+  color: #71b32b;
+}
 
 
 
@@ -187,7 +189,4 @@
 
 
 
-    /* .footer {
-        bottom: 0;
-      } */
   }

@@ -175,7 +175,9 @@ body {
 .footer{
   bottom: 0;
 }
-
+.product--green{
+  color: #71b32b;
+}
 
 @media (min-width: 1280px) {
   .container {

@@ -233,6 +233,9 @@ body {
 .list-item__title--violet {
   background-color: #995296;
 }
+.product--green{
+  color: #71b32b;
+}
 
 @media (min-width: 1280px) {
   .wrapper-shopPage {
