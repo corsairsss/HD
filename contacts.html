@@ -9,122 +9,107 @@
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/contacts.css" />
 
-        <title>Himdecor</title>
-    
+    <title>Himdecor</title>
   </head>
   <body>
     <header>
-         
       <div class="container">
-       
-          <div class="burgerImg js-click">
-            <img src="./images/menu2.png" alt="">
-          </div>
-        <picture class="logo">
-          <source media="(max-width: 767px)" srcset="images/LOGO.png">
-          <source media="(max-width: 1439px)" srcset="images/LOGO_min768px.png">
-            <source media="(min-width: 1440px)" srcset="images/LOGO-wide.png">
-
-          <img src="images/LOGO.png" alt="logo">
-        </picture>
-
+        <div class="burgerImg js-click">
+          <img src="./images/menu2.png" alt="" />
+        </div>
+        <a href="/">
+          <picture class="logo">
+            <source media="(min-width: 1280px)" srcset="images/LOGO-wide.png" />
+            <img src="images/LOGO.png" alt="logo" />
+          </picture>
+        </a>
 
         <ul class="lang">
           <li class="lang__list"><a class="lang__item" href="#">укр</a></li>
           <li class="lang__list"><a class="lang__item" href="#">eng</a></li>
           <li class="lang__list"><a class="lang__item" href="#">рус</a></li>
         </ul>
-     
-     
+
         <ul class="menu js-menu320Px">
-          <li class="menu__list"><a class="menu__item" href="./about.html">про компанію</a></li class="menu__list">
-          <li class="menu__list"><a class="menu__item" href="./categories_page.html">продукція</a></li>
+          <li class="menu__list"><a class="menu__item" href="./about.html">про компанію</a></li>
+          <li class="menu__list">
+            <a class="menu__item" href="./categories_page.html">продукція</a>
+          </li>
           <li class="menu__list"><a class="menu__item" href="./needKnow.html">корисно знати</a></li>
           <li class="menu__list"><a class="menu__item" href="./partners.html">партнерам</a></li>
           <li class="menu__list"><a class="menu__item" href="./toBuy.html">де купити</a></li>
-          <li class="menu__list"><a class="menu__item product--green" href="./contacts.html">контакти</a></li>
+          <li class="menu__list">
+            <a class="menu__item product--green" href="./contacts.html">контакти</a>
+          </li>
         </ul>
-
-        </div>
-       
-
-      
+      </div>
     </header>
 
     <main>
-      
+      <section class="contact">
+        <div class="phones">
+          <a href="tel:+380674310968" class="phones__mobile">+380(67)4310968</a>
+          <p class="phones__works">0432-55-66-18</p>
+        </div>
 
-        <section class="contact">
+        <div class="emails">
+          <p class="emails__info">info@himdecor.ua</p>
+          <p class="emails__employer">mycola.osaulenko@himdecor.ua (директор)</p>
+        </div>
 
-            <div class="phones">
-              <a href="tel:+380674310968"class="phones__mobile">+380(67)4310968</a>
-              <p class="phones__works">0432-55-66-18 </p>
-            </div>
-            
-            <div class="emails">
-              <p class="emails__info">info@himdecor.ua</p>
-              <p class="emails__employer">mycola.osaulenko@himdecor.ua (директор)</p>
-            </div>
-            
-            <div class="address">
-              <p class="address_text">м.Вінниця, вул. Максима Шимка, 42</p>
-            </div>
-            <div class="web">
-                <p class="web_text">www.zakraska.com.ua</p>
-                <p class="web_text">www.himrezerv.com.ua</p>
-                
+        <div class="address">
+          <p class="address_text">м.Вінниця, вул. Максима Шимка, 42</p>
+        </div>
+        <div class="web">
+          <p class="web_text">www.zakraska.com.ua</p>
+          <p class="web_text">www.himrezerv.com.ua</p>
+        </div>
 
-              </div>
-            
-            <picture class="contact__picture">
-              <img src="images/ill_contact.png" alt="">
-            </picture>
-            
-            </section>
-            <section class="contact-map">
-                <img src="./images/map.jpg" alt="">
-            </section>
+        <picture class="contact__picture">
+          <img src="images/ill_contact.png" alt="" />
+        </picture>
+      </section>
+      <section class="contact-map">
+        <img src="./images/map.jpg" alt="" />
+      </section>
     </main>
 
-<footer class="footer">
+    <footer class="footer">
+      <section class="footer__wraper">
+        <ul class="footer__list list">
+          <li class="list__item"><a class="footer__menu" href="./about.html">Про компанію</a></li>
+          <li class="list__item">
+            <a class="footer__menu" href="./categories_page.html">Продукція</a>
+          </li>
+          <li class="list__item">
+            <a class="footer__menu" href="./needKnow.html">Корисно знати</a>
+          </li>
+          <li class="list__item"><a class="footer__menu" href="./partners.html">Партнерам</a></li>
+          <li class="list__item"><a class="footer__menu" href="./toBuy.html">Де купити</a></li>
+          <li class="list__item"><a class="footer__menu" href="./contacts.html">Контакти</a></li>
+        </ul>
 
-  <section class="footer__wraper">
+        <div class="social">
+          <a href="#" class="facebook">
+            <img src="./images/facebook-icon.png" alt="" />
+          </a>
+          <a href="#" class="youtube">
+            <img src="./images/Youtube.png" alt="" />
+          </a>
+        </div>
 
-    <ul class="footer__list list">
-      <li class="list__item"><a class="footer__menu" href="./about.html">Про компанію</a></li class="menu__list">
-      <li class="list__item"><a class="footer__menu" href="./categories_page.html">Продукція</a></li>
-      <li class="list__item"><a class="footer__menu" href="./needKnow.html">Корисно знати</a></li>
-      <li class="list__item"><a class="footer__menu" href="./partners.html">Партнерам</a></li>
-      <li class="list__item"><a class="footer__menu" href="./toBuy.html">Де купити</a></li>
-      <li class="list__item"><a class="footer__menu" href="./contacts.html">Контакти</a></li>
-  </ul>
-
-    <div class="social">
-     <a href="#" class="facebook">
-       <img src="./images/facebook-icon.png" alt="">
-     </a>
-    <a href="#" class="youtube">
-      <img src="./images/Youtube.png" alt="">
-    </a>
-  </div>
-
-    <span class="footer__info">Всі права захищені 2020</span>
-
-
-
-  </section>
-
-</footer>
+        <span class="footer__info">Всі права захищені 2020</span>
+      </section>
+    </footer>
 
     <script>
-
       'use strict';
-      const refFallowMenu=document.querySelector('.js-click');
+      const refFallowMenu = document.querySelector('.js-click');
       const menu320Px = document.querySelector('.js-menu320Px');
-      refFallowMenu.addEventListener('click',addMenu);
-      function addMenu(){
-        menu320Px.classList.toggle('show-menu')
+      refFallowMenu.addEventListener('click', addMenu);
+      function addMenu() {
+        menu320Px.classList.toggle('show-menu');
       }
-   </script>
+    </script>
   </body>
 </html>

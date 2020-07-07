@@ -38,6 +38,7 @@ p {
 .logo {
   justify-self: center;
 }
+
 /* ================lang================ */
 .lang {
   margin: 0;
@@ -82,7 +83,9 @@ p {
   font-family: 'PFDinTextPro';
   color: #000000;
 }
-
+.product-green {
+  color: #71b32b;
+}
 .menu {
   grid-column: 1/4;
   display: none;
@@ -174,8 +177,7 @@ p {
   display: none;
 }
 
-
-  .product--green{
+.product--green {
   color: #71b32b;
 }
 @media (min-width: 1280px) {
@@ -236,45 +238,7 @@ p {
     font-size: 36px;
   }
 
-  /* .footer__wraper{
-    justify-content: center;
-    margin: 0 auto;
-    font-size: 18px;
-    width: 1260px;
-    
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 45px;
-    align-items: center;
-    padding-bottom: 15px;
-    padding-top: 15px;
-  
-  
-  } 
-  .footer__menu{
-    color: #ffffff;
-    text-decoration: none;
-  }
-  .footer__list{
-      padding: 0;
-      justify-self: left;
-    font-size: 16px;
-    font-family: 'PFDinTextPro';
-    text-transform: uppercase;
-    grid-template-columns: repeat(6, max-content);
-    grid-column-gap: 35px;
-  }
-  .facebook {
-    margin-right: 40px;
-  }
-  .footer__menu:hover{
-    color: #71b32b;
-  cursor: pointer;
-  }
-  .list__item:first-child {
-    display: block;
-  } */
   .footer {
     bottom: 0;
-  
-}
+  }
 }

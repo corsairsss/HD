@@ -3,7 +3,6 @@
   width: 320px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  /* justify-items: center; */
   margin-top: 10px;
 }
 .logo {
@@ -95,7 +94,6 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     align-items: center;
-    /* align-items: end; */
   }
   .lang {
     align-items: center;
